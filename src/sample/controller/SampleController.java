@@ -30,6 +30,16 @@ public class SampleController {
 	}
 	
 	private void scanner() {
-
+		Scanner firstScanner; //Declares a Scanner object.
+		firstScanner = new Scanner(System.in); //Instanciates a Scanner
+		System.out.println("");
+		String answer = firstScanner.nextLine();
+		
+		PlayDohCircle changeCircle = new PlayDohCircle();
+		System.out.println("I'm gonna make a circle how big should I make it?");
+		int mySize = firstScanner.nextInt();
+		changeCircle.setSize(mySize);
+		System.out.println("Look at this circle");
+		System.out.println(changeCircle);
 	}
 }
